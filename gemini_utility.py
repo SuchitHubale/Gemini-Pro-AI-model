@@ -39,7 +39,7 @@ def gemini_pro_vision_response(prompt, image):
 # print(output)
 
 def embedding_model_response(input_text):
-    embedding_model = "model/embedding-001"
+    embedding_model = "models/embedding-001"
     embedding = genai.embed_content(model=embedding_model,
                                     content=input_text,
                                     task_type="retrieval_document")
